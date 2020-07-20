@@ -11,7 +11,7 @@ if (contentCityName== "Bécs")
 
     alert("Igen Bécs!!! Ügyes vagy Cuki! :) ");
 
-    else if (contentCityName== "Bécs ")
+    else if (contentCityName== "Bécs_")
     alert("Igen Bécs!!! Ügyes vagy Cuki! :) ");
 
     else
