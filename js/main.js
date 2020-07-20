@@ -1,12 +1,33 @@
-let piece = document.querySelector("#amount").value;
-let button = document.querySelector("#calcButton");
+function calcAmount(){
+    let price = 1000;
+    let amountInput = document.querySelector("input[name='amount']");
+    let showSumPrice = document.querySelector("output[name='rs']");
+    let result = parseInt(amountInput.value)*price;
+    showSumPrice.innerHTML = result;
 
-let calcAmount = function (param){
-
- 
-    let out = document.querySelector("#result").value;
-    out = parseInt(param)*1000;
-
+ //   alert("Fizetendő"+result+"Ft");
 }
 
-button.addEventListener("click",calcAmount(piece));
+let helpText = document.createElement("small");
+helpText.className = "form-text text-muted";
+helpText.innerHTML = "Adja meg a feltéteket";
+let parent = document.querySelector("div.form-group:nth-child(2)");
+parent.appendChild(helpText);
+
+// btn btn-primary
+// #calcButton
+// button.btn.btn-primary
+// button.btn.btn-primary:nth-child(5)
+
+let formRel = document.querySelector("form");
+let sendButton = document.querySelector("button.btn.btn-primary:nth-child(5)");
+
+sendButton.addEventListener("click",
+    function()
+        {
+            alert("Hello JS");
+        }
+);
+
+ let proba = document.querySelector("input[name='amount']");
+ console.log(proba);
