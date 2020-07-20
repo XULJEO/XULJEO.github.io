@@ -7,7 +7,7 @@ inputCityName.setAttribute("placeholder", "városnév");
 
 let contentCityName = inputCityName.value;
 
-if (contentCityName=="Bécs")
+if (contentCityName=="Bécs" || "Bécs ")
 
     alert("Igen Bécs!!! Ügyes vagy Cuki! :) ");
 
