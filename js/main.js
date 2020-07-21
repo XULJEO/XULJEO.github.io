@@ -31,3 +31,16 @@ sendButton.addEventListener("click",
 
  let proba = document.querySelector("input[name='amount']");
  console.log(proba);
+
+ // Input Border colors
+
+ Element.prototype.colorChange = function()
+ {
+     this.style.border = "solid 2px red";
+ }
+
+ let myInputNodeList = document.querySelectorAll("input");
+ for(let a=0; a<myInputNodeList.length; a++)
+ {
+     myInputNodeList[a].colorChange(); 
+ }

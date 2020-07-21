@@ -23,45 +23,67 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">Navbar</a>
+        <!-- <a class="navbar-brand" href="/index.html">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <form class="form-inline my-2 my-lg-0">
+                <!--  <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form> -->
         </div>
     </nav>
-    <div>
-        <p>Nagyon jó volt Veled itt (is) </p>
-        <img width="300px" src="/img/20191012_130331.jpg" alt="Hiba a kép betöltésekor">
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
 
-    <div>
+            <div class="col-10" id="picturesDiv">
+                <figure>
+                    <img src="/img/20191012_130331.jpg" alt="Hiba a kép betöltésekor" title="Fertőrákos 2019">
 
-        <img width="300px" src="/img/20190907_173956.jpg" alt="Hiba a kép betöltésekor">
+                    <figcaption>
+                        Fertőrákos 2019
+                    </figcaption>
 
-        <div class="form-group">
-
-            <p> Találd ki melyik városban készült a templomos kép! :) </p>
-            <input type="text" class="form-control" id="church">
-            
-            
+                </figure>
+                <figure>
+                    <img src="/img/20190907_173956.jpg" alt="Hiba a kép betöltésekor" title="???">
+                    <figcaption>
+                        ???
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-1"></div>
         </div>
+        <div>
 
-        <button onclick="game()" id="buttonCity" type="button" class="btn btn-primary">Próba</button>
+            <div class="row">
 
-    </div>
+                <div class="col-2"></div>
 
-    <script src="/js/pictures.js"></script>
+                <div class="col-8">
+
+                    <div class="form-group">
+
+                        <p> Találd ki melyik városban készült a templomos kép! :) </p>
+                        <input type="text" class="form-control" id="church">
+
+                    </div>
+
+                    <button onclick="game()" id="buttonCity" type="button" class="btn btn-primary">Próba</button>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <script src="/js/pictures.js"></script>
 
 </body>
 
