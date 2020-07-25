@@ -1,3 +1,4 @@
+
 function calcAmount(){
     let price = 1000;
     let amountInput = document.querySelector("input[name='amount']");
