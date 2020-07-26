@@ -1,6 +1,6 @@
 
 function calcAmount(){
-    let price = 1000;
+    let price = 100000;
     let amountInput = document.querySelector("input[name='amount']");
     let showSumPrice = document.querySelector("output[name='rs']");
     let result = parseInt(amountInput.value)*price;
@@ -23,12 +23,12 @@ parent.appendChild(helpText);
 let formRel = document.querySelector("form");
 let sendButton = document.querySelector("button.btn.btn-primary:nth-child(5)");
 
-sendButton.addEventListener("click",
+/* sendButton.addEventListener("click",
     function()
         {
             alert("Hello JS");
         }
-);
+); */
 
  let proba = document.querySelector("input[name='amount']");
  console.log(proba);
