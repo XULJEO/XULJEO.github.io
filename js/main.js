@@ -11,7 +11,7 @@ function calcAmount(){
 
 let helpText = document.createElement("small");
 helpText.className = "form-text text-muted";
-helpText.innerHTML = "Adja meg a darabszámot";
+helpText.innerHTML = "Add meg a darabszámot";
 let parent = document.querySelector("div.form-group:nth-child(2)");
 parent.appendChild(helpText);
 
